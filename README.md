@@ -1,4 +1,0 @@
-Jueditor
-========
-
-ueditor for Joomla!
