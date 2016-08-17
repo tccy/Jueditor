@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors" method="upgrade">
+	<name>Joomla-UEditor</name>
+	<version>1.0.0</version>
+	<creationDate>April 2013</creationDate>
+	<author>yuan hao</author>
+	<authorEmail>N/A</authorEmail>
+	<authorUrl>yuanhao</authorUrl>
+	<copyright>@yuanhao</copyright>
+	<license>UEditor</license>
+	<description>Joomla! UEditor Plugins</description>
+    <files >
+        <filename plugin="jueditor">jueditor.php</filename>
+        <filename>index.html</filename> 
+		<folder>ueditor</folder>
+    </files>
+
+	<config>
+	<fields name="params">
+
+		<fieldset name="basic"
+			label="基本功能"
+		>
+			<field name="undo_redo" type="radio"
+				default="1"
+				description="撤销、重做。"
+				label="撤销重做"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="list" type="radio"
+				default="1"
+				description="有序列表、无序列表。"
+				label="列表"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="link" type="radio"
+				default="1"
+				description="超链接、取消超链接。"
+				label="超链接"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="clear_selectall" type="radio"
+				default="1"
+				description="清空文档、全选。"
+				label="清空全选"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="spacer1" type="spacer"
+				hr="true"
+			/>			
+
+			<field name="text_format" type="radio"
+				default="1"
+				description="加粗、斜体、下划线、删除线、上标、下标。"
+				label="文本格式"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="font_format" type="radio"
+				default="1"
+				description="字体、字号、文字颜色、背景颜色、清除格式、格式刷。"
+				label="文字格式"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="spacer2" type="spacer"
+				hr="true"
+			/>
+
+			<field name="justify" type="radio"
+				default="1"
+				description="居左对齐、居中对齐、居右对齐、两端对齐。"
+				label="对齐方式"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="image" type="radio"
+				default="1"
+				description="图片默认、图片居左、图片居右、图片居中。"
+				label="图片对齐"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="spacer3" type="spacer"
+				hr="true"
+			/>
+
+			<field name="insert_std" type="radio"
+				default="1"
+				description="图片、涂鸦、音乐、附件、截图、表情、视频。"
+				label="标准插入"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+		</fieldset>
+
+		<fieldset name="advanced"
+			label="高级功能"
+		>
+
+			<field name="insert_spc" type="radio"
+				default="0"
+				description="特殊字符、引用、插入代码、日期、时间。"
+				label="特别插入"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="insert_typesetting" type="radio"
+				default="0"
+				description="分页、图片转存、水平线、锚点、Iframe、模版、背景。"
+				label="排版插入"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="typesetting" type="radio"
+				default="0"
+				description="首行缩进、自动排版、纯文本粘贴、自定义样式、段落格式、段前间距、段后间距、行间距。"
+				label="标准排版"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="spacer4" type="spacer"
+				hr="true"
+			/>
+
+			<field name="table" type="radio"
+				default="0"
+				description="UEditor中所有表格功能项。"
+				label="表格"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="spacer5" type="spacer"
+				hr="true"
+			/>
+
+			<field name="insert_app" type="radio"
+				default="0"
+				description="Google地图、百度地图、百度应用。"
+				label="应用插入"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="spacer6" type="spacer"
+				hr="true"
+			/>
+
+			<field name="Letter" type="radio"
+				default="0"
+				description="字母大写、字母小写。"
+				label="字母"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+			<field name="Input_direction" type="radio"
+				default="0"
+				description="从左向右输、从右向左输。"
+				label="输入方向"
+			>
+				<option value="1">ON</option>
+				<option value="0">OFF</option>
+			</field>
+
+		</fieldset>
+		
+		<fieldset name="lang"
+			label="语言选项"
+		>
+
+			<field name="language" type="radio"
+				default="1"
+				description="语言"
+				label="语言"
+			>
+				<option value="1">中文</option>
+				<option value="0">英文</option>
+			</field>
+		
+		</fieldset>
+	</fields>
+</config>
+</extension>
